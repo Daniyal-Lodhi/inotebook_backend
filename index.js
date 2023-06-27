@@ -10,8 +10,8 @@ app.use(cors())
 app.use(express.json())
 
 /*(/api/auth)-->idhr middleware function exceute hoga ,(./ routes/auth)--> idhr middleware function hy */ 
-app.use('/api/auth', require('./routes/auth'))
-app.use('/api/notes', require('./routes/notes'))
+// app.use('/api/auth', require('./routes/auth'))
+// app.use('/api/notes', require('./routes/notes'))
 app.use('/', (req,res)=>{
   res.json({message:"JAZAKALLAH"})
 });
