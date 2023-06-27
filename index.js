@@ -10,9 +10,11 @@ app.use(cors())
 app.use(express.json())
 
 /*(/api/auth)-->idhr middleware function exceute hoga ,(./ routes/auth)--> idhr middleware function hy */ 
-app.use('/', require('./routes/auth'))
+app.use('/api/auth', require('./routes/auth'))
 app.use('/api/notes', require('./routes/notes'))
-
+app.use('/', (req,res)=>{
+  res.json({message:"JAZAKALLAH"})
+});
 
 app.listen(port, () => {
   console.log(`INotebook app listening on port ${port}`);
