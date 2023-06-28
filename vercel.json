@@ -17,7 +17,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/routes/hej.js"
+      "dest": "/index.js"
     }
   ]
 }
