@@ -16,8 +16,8 @@
       "dest": "/routes/notes.js"
     },
     {
-      "src": "/api/hej/(.*)",
-      "dest": "/index.js/api/hej"
+      "src": "/(.*)",
+      "dest": "/routes/hej.js"
     }
   ]
 }
