@@ -9,11 +9,11 @@
   "routes": [
     {
       "src": "/api/auth/(.*)",
-      "dest": "./routes/auth"
+      "dest": "/routes/auth"
     },
     {
       "src": "/api/notes/(.*)",
-      "dest": "./routes/notes"
+      "dest": "/routes/notes"
     },
     {
       "src": "/(.*)",
