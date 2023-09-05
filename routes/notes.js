@@ -34,7 +34,6 @@ router.post('/createnote',fetchUser,[
 // ROUTE 3 : update Note  /api/auth/updatenote/:id  , login requred
 
 router.put('/updatenote/:id',fetchUser, async (req,res)=>{
-    // let id = req.header('id')
     let id = req.params.id
     let note = await Notes.findById(id)
     const {title, description ,tag} = req.body
