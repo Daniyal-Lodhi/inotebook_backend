@@ -6,7 +6,6 @@ connectToMongo()
 const app = express()
 const port = 6000;
 app.use(cors())
-app.use(cookiep)
 app.use(express.json()) 
 
 /*(/api/auth)-->idhr middleware function exceute hoga ,(./ routes/auth)--> idhr middleware function hy */ 
